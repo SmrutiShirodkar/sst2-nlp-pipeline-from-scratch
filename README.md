@@ -81,3 +81,19 @@ which is a useful sanity check that the model learned something real rather than
 
 Download the SST-2 dataset from [here](https://dl.fbaipublicfiles.com/glue/data/SST-2.zip) and unzip it so that
 `train.tsv` and `dev.tsv` sit inside a `data/SST-2/` folder relative to the notebook.
+
+## Skills demonstrated
+
+**NLP Fundamentals:** tokenization (custom and NLTK), stemming (custom Porter/Lancaster-style comparison),
+stopword removal, vocabulary construction, bag-of-words feature extraction
+
+**Deep Learning from First Principles:** PyTorch `Dataset`/`DataLoader`, manual forward pass and backward pass
+wiring, explicit weight initialization, binary cross-entropy loss, Adam optimizer, built without a high-level
+training API to demonstrate understanding of each component
+
+**Evaluation:** precision, recall, F1, confusion matrix analysis on an imbalanced-class dataset, baseline
+comparison against random guessing, model interpretability via learned-weight inspection
+
+**Engineering Practice:** hand-constructed unit tests for preprocessing functions, side-by-side comparison of
+custom implementations against established library behavior to validate design choices, explicit documentation
+of unaddressed limitations (no hyperparameter search, no stronger baseline, hardcoded device default)
